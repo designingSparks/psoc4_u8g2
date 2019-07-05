@@ -41,8 +41,9 @@
           <File BuildType="BUILD" Toolchain="">eeprom.c</File>
           <File BuildType="BUILD" Toolchain="">debugUart.c</File>
           <File BuildType="BUILD" Toolchain="">console.c</File>
+          <File BuildType="BUILD" Toolchain="">oled.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
-          <File BuildType="BUILD" Toolchain="">oled_lcd.h</File>
+          <File BuildType="BUILD" Toolchain="">oled.h</File>
           <File BuildType="BUILD" Toolchain="">console.h</File>
           <File BuildType="BUILD" Toolchain="">utilities.h</File>
           <File BuildType="BUILD" Toolchain="">debugUart.h</File>

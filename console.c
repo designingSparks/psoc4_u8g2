@@ -13,8 +13,8 @@
 #include "console.h"
 #include "commands.h"
 #include "utilities.h"
-//#include "idac.h"
-//#include "adc_dma.h"
+//#include "u8g2.h"
+#include "oled.h"
 
 #define LEN_CMDBUF 16
 
@@ -98,6 +98,12 @@ void processCommand(void)
       else if (cmd == WRITE && param == DAC1)
       {
         dbg_printf("Write DAC1: %d\n", int_val);
+      }
+      else if (cmd == WRITE && param == OLED1)
+      {
+        dbg_printf("Write OLED: %s\n", value);
+        write_oled(value);
+        //u8g2_DrawStr(&u8g2, 0,20, value);
       }
     }//end if !err
     
