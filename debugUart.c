@@ -14,7 +14,7 @@
 
 CY_ISR_PROTO(uartRxISR);
 
-#define BUFFERSIZE	15 //last byte is '\r' to indicate EOC
+#define BUFFERSIZE	32 //last byte is '\r' to indicate EOC
 #define ERRORMSG "Barrrm!\r"
 
 //Add an extra byte to allow uartBuffer to be null terminated

@@ -16,7 +16,7 @@
 //#include "u8g2.h"
 #include "oled.h"
 
-#define LEN_CMDBUF 16
+#define LEN_CMDBUF 32
 
 char cmdBuffer[LEN_CMDBUF];
 char ackBuffer[5]; //for acknowledge command
@@ -38,7 +38,7 @@ uint8_t pwm_val;
  */
 void cmdCallback(char* uBuff)
 {
-  memcpy(cmdBuffer, uBuff, 9);
+  memcpy(cmdBuffer, uBuff, LEN_CMDBUF);
   cmdReceived = 1;
 }
 
