@@ -11,9 +11,9 @@
 */
 #ifndef _DEBUG_UART_H
 #define _DEBUG_UART_H
-
-#define EOC '\r' //end of command character
-
+#define EOC '\n' //end of command character
+#define EOT 0x4  //used to flush buffer
+  
 typedef void (*cmdReceived_callback) (char *);
 
 //Function prototypes

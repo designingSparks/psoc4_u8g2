@@ -21,7 +21,6 @@ CY_ISR_PROTO(uartRxISR);
 //Otherwise UART_1_UartPutString doesn't work properly
 char uartBuffer[BUFFERSIZE + 1]; 
 uint32_t bufferPos = 0;
-uint32_t dataReady = 0;
 cmdReceived_callback fn_cmdReceived; //callback function
 
 
@@ -49,42 +48,39 @@ CY_ISR(uartRxISR)
   uint8_t ch;
   uint32 source = 0;
   static uint8_t overrun = 0;
+ 
+  ch = UART_1_UartGetChar();
   
-  if (overrun) //receive characters until EOC received
+  if (ch == EOT) //reset input buffer
   {
-    ch = UART_1_UartGetChar();
-    if (ch == EOC)
-    {
-      overrun = 0;
-      memset(uartBuffer, 0, BUFFERSIZE); //Clean the buffer!
-		  bufferPos = 0;
-    }
+    bufferPos = 0;
+    memset(uartBuffer, 0, BUFFERSIZE);
+  }
+  else if (ch == EOC && overrun)
+  {
+    bufferPos = 0;
+    overrun = 0;
+    memset(uartBuffer, 0, BUFFERSIZE);
+    UART_1_UartPutString("Overrun\n");
+    //TODO: Send an error code back.
+  }
+  else if (ch == EOC)
+  {
+    bufferPos = 0;
+    //UART_1_UartPutString(uartBuffer); //debug
+    fn_cmdReceived(uartBuffer); 
+    memset(uartBuffer, 0, BUFFERSIZE); //Clean the buffer!
   }
   else if (bufferPos < BUFFERSIZE)
   {
-    ch = UART_1_UartGetChar();
-    if (ch == EOC)
-    {
-      
-      //UART_1_UartPutString(uartBuffer);  //Debug
-      //cmdCallback(&uartBuffer[0]); //below works the same
-      fn_cmdReceived(uartBuffer); 
-      dataReady = 1;
-      memset(uartBuffer, 0, BUFFERSIZE); //Clean the buffer!
-		  bufferPos = 0;
-    }
-    else
-      uartBuffer[bufferPos++] = ch;
+    uartBuffer[bufferPos++] = ch;
   }
-  else //buffer overrun
+  else if (bufferPos >= BUFFERSIZE)
   {
-    UART_1_UartPutString(ERRORMSG);
     overrun = 1;
   }
-  //Clear the interrupt
+  //Clear the interrupt. This is necessary for the PSOC4
   source = UART_1_GetRxInterruptSourceMasked();
   UART_1_ClearRxInterruptSource(source);
 }
-
-
 /* [] END OF FILE */

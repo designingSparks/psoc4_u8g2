@@ -37,15 +37,16 @@
       <Folder BuildType="STRICT" Path="C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn">
         <Files Root="C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
-          <File BuildType="BUILD" Toolchain="">debugUart.c</File>
-          <File BuildType="BUILD" Toolchain="">console.c</File>
           <File BuildType="BUILD" Toolchain="">utilities.c</File>
           <File BuildType="BUILD" Toolchain="">eeprom.c</File>
+          <File BuildType="BUILD" Toolchain="">debugUart.c</File>
+          <File BuildType="BUILD" Toolchain="">console.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">oled_lcd.h</File>
-          <File BuildType="BUILD" Toolchain="">debugUart.h</File>
           <File BuildType="BUILD" Toolchain="">console.h</File>
           <File BuildType="BUILD" Toolchain="">utilities.h</File>
+          <File BuildType="BUILD" Toolchain="">debugUart.h</File>
+          <File BuildType="BUILD" Toolchain="">commands.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn">

@@ -11,14 +11,24 @@
 */
 
 #include "console.h"
+#include "commands.h"
+#include "utilities.h"
+//#include "idac.h"
+//#include "adc_dma.h"
+
 #define LEN_CMDBUF 16
 
 char cmdBuffer[LEN_CMDBUF];
-//char intBuffer[14];
+char ackBuffer[5]; //for acknowledge command
 volatile uint8_t cmdReceived = 0;  //set to true when a command 
 int32_t int_val;
-char* param;
+int16_t result_int; //
+char* result_str;
+char* value;
 char* str_val;
+char temp;
+uint8_t dac_max = 241; //calibration value
+uint8_t pwm_val;
 
 /*
  * This callback is registered with the debugUart.c module.
@@ -29,7 +39,6 @@ char* str_val;
 void cmdCallback(char* uBuff)
 {
   memcpy(cmdBuffer, uBuff, 9);
-  //memcpy(intBuffer, &uBuff[2], 7);
   cmdReceived = 1;
 }
 
@@ -39,36 +48,34 @@ void cmdCallback(char* uBuff)
 void processCommand(void)
 {
   CmdType cmd;
-  ParamID fn;
+  ParamID param;
   DataType dformat;
   ErrType err = 0;
   
   if (cmdReceived)
   {
+    //UART_1_UartPutString(cmdBuffer); //debug
     cmd = cmdBuffer[0];
-    fn = cmdBuffer[1];
+    param = cmdBuffer[1];
     dformat = cmdBuffer[2];
-    param = &cmdBuffer[3];
-    
+    value = &cmdBuffer[3];
+      
     //Error checking
     //Parameter must be supplied if dformat > DFORMAT_NONE
-    if (dformat > DFORMAT_NONE && *param == '\0')
+    if (dformat > D_NONE && *value == '\0')
     {
       err = ERR_NOARG;
     }
-    else if (dformat == DFORMAT_INT32)
+    else if (dformat == D_INT32)
     {
       if (cmdBuffer[3] == '-' && cmdBuffer[4] == '\0')
         err = ERR_INT_INVALID;
-      else if (is_integer(param))
-        int_val = atoi(param);
+      else if (is_integer(value))
+        int_val = atoi(value);
       else
         err = ERR_INT_INVALID;
     }    
-    else if (dformat == DFORMAT_STR)
-    {
-      str_val = param;
-    }
+   
     
     if (err)
     {
@@ -76,26 +83,35 @@ void processCommand(void)
     }
     else //process commands
     {
-      dbg_printf("Processing CMD\n");
-      if (cmd == CMD_READ && fn == PARAM_YK)
+      //dbg_printf("Processing CMD\n");
+      
+      if (cmd == READ && param == ADC) 
       {
-        dbg_printf("Read YK:\n");
+        dbg_printf("Reading ADC\n");
+        result_int = 99;
+        dbg_printf("%d\n", result_int);
       }
-      else if (cmd == CMD_WRITE && fn == PARAM_YK) 
+      else if (cmd == READ && param == ADC_DMA) //01199 - read 99 samples
       {
-        dbg_printf("Write YK:\n");
+        dbg_printf("Reading ADC DMA\n");
       }
-      else if (cmd == CMD_TEST) //'2'
+      else if (cmd == WRITE && param == DAC1)
       {
-        if (dformat == DFORMAT_INT32)
-          dbg_printf("Int: %d\n", int_val);
-        else if (dformat == DFORMAT_STR)
-          dbg_printf("Str: %s\n", str_val);
-        //dbg_printf("Int=%d  String=%s\n",1,"asdf");
-        //dbg_printf("%02d:%02d:%02d", 10, 10, 5);
+        dbg_printf("Write DAC1: %d\n", int_val);
       }
     }//end if !err
     
+    
+    if (SEND_ACK) //send acknowledge bytes
+    {
+      //CyDelayUs(100); //Give pyserial a small delay to allow ack packet to be detected.
+      ackBuffer[0] = cmd;
+      ackBuffer[1] = param;
+      ackBuffer[2] = dformat;
+      ackBuffer[3] = '\n';
+      ackBuffer[4] = 0x04; //End of transmission
+      UART_1_UartPutString(ackBuffer);
+    }
     cmdReceived = 0; //Indicate that the cmd has been processed.
   }
 }//processCommand
