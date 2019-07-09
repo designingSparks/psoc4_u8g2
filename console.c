@@ -105,6 +105,16 @@ void processCommand(void)
         write_oled(value);
         //u8g2_DrawStr(&u8g2, 0,20, value);
       }
+      else if (cmd == WRITE && param == DACPWM)
+      {
+        dbg_printf("Write DACPWM: %d\n", int_val);
+        PWM_1_WriteCompare(int_val); //The PWM has double buffered capture/compare
+      }
+      else if (cmd == WRITE && param == IDAC)
+      {
+        dbg_printf("Write IDAC: %d\n", int_val);
+        IDAC_1_SetValue(int_val); //The PWM has double buffered capture/compare
+      }
     }//end if !err
     
     

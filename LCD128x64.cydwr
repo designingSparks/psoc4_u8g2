@@ -20,6 +20,8 @@
       <Data key="404b0c55-d60d-498f-adb4-aa43018ec80a" value="pin_CS" />
       <Data key="4955f710-a928-47ad-a652-c314864e617c/23b8206d-1c77-4e61-be4a-b4037d5de5fc" value="UART_1_tx" />
       <Data key="4955f710-a928-47ad-a652-c314864e617c/78e33e5d-45ea-4b75-88d5-73274e8a7ce4" value="UART_1_rx" />
+      <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="IDAC1_OUT" />
+      <Data key="bdfaa2ef-7fe3-4cc6-8163-2c41549873c3" value="DAC_PWM" />
       <Data key="d6c1e020-a859-4581-ace1-f0cb5d384d49" value="pin_DC" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="MOSI" />
     </Group>
@@ -1309,6 +1311,16 @@
     <Group key="4955f710-a928-47ad-a652-c314864e617c/78e33e5d-45ea-4b75-88d5-73274e8a7ce4">
       <Group key="0">
         <Data key="Port Format" value="4,0" />
+      </Group>
+    </Group>
+    <Group key="77715107-f8d5-47e5-a629-0fb83101ac6b">
+      <Group key="0">
+        <Data key="Port Format" value="1,3" />
+      </Group>
+    </Group>
+    <Group key="bdfaa2ef-7fe3-4cc6-8163-2c41549873c3">
+      <Group key="0">
+        <Data key="Port Format" value="1,2" />
       </Group>
     </Group>
     <Group key="d6c1e020-a859-4581-ace1-f0cb5d384d49">

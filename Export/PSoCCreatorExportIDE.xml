@@ -235,6 +235,22 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\v_EEPROM.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cy_em_eeprom.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cy_em_eeprom.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC1_OUT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC1_OUT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC1_OUT_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC1_OUT_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
