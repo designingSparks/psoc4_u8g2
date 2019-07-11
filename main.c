@@ -14,6 +14,9 @@
 #include "debugUart.h"
 #include "console.h"
 
+//Prototypes
+//void initialize();
+void Lpcomp_DDFT_Out(void);
 
 int main(void)
 {
@@ -27,6 +30,17 @@ int main(void)
     uartInit(cmdCallback); //Register callback function console.c
     init_Oled();
     
+    PWM_TON_Start();
+	  PWM_T2_Start();
+  
+    LPComp_0_Start();    
+    LPComp_0_SetSpeed(LPComp_0_HIGHSPEED);
+	  Lpcomp_DDFT_Out(); //Wire comparator output to P2.3
+    
+    //Apply start pulse to Timer and low side switch.
+  	startPWM_Write(1); //reacts to rising edge
+  	startPWM_Write(0); 
+  
     uint8_t i;
     //Variables for emulated EEPROM example
     static const uint8 CYCODE eepromArray[]=
@@ -52,6 +66,23 @@ int main(void)
       processCommand();
       CyDelay(200);
     }
+}
+
+//Connect comparator outputs to physical pins
+void Lpcomp_DDFT_Out(void)
+{
+	/* clear bit[5:0] for DDFT0 */
+    (*(reg32 *)CYREG_TST_DDFT_CTRL) &= ~(0x3F);
+    /* select LPCOMP_0 as DDFT0 source, DDFT0 output connect to P2[3] directly in the internal */
+    (*(reg32 *)CYREG_TST_DDFT_CTRL) |= (11u);
+    
+    /* clear bit[13:8] for DDFT1 */
+//    (*(reg32 *)CYREG_TST_DDFT_CTRL) &= ~(0x3F << 8);
+    /* select LPCOMP_1 as DDFT1 source, DDFT1 output connect to P1[2] directly in the internal */
+//    (*(reg32 *)CYREG_TST_DDFT_CTRL) |= (12u) << 8;
+    
+    /* enable DDFT function */
+    (*(reg32 *)CYREG_TST_DDFT_CTRL) |= (1u) << 31;
 }
 
 

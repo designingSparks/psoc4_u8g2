@@ -245,12 +245,44 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_T2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_T2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_T2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_TON.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_TON.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_TON_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_0.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_0.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_0_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT0_Out.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT0_Out.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT0_Out_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\startPWM.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\startPWM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\startPWM_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CyClock_24.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CyClock_24.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Control_Reg_enableSwap.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Control_Reg_enableSwap.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Control_Reg_enableSwap_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
