@@ -32,7 +32,8 @@ int main(void)
     
     PWM_TON_Start();
 	  PWM_T2_Start();
-  
+    Counter_Start();
+    
     LPComp_0_Start();    
     LPComp_0_SetSpeed(LPComp_0_HIGHSPEED);
 	  Lpcomp_DDFT_Out(); //Wire comparator output to P2.3

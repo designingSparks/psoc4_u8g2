@@ -19,15 +19,16 @@
     <Group key="Pin">
       <Data key="1bd4a2d1-a84a-4bbe-bc9e-dc6a2094911a" value="pin_RES" />
       <Data key="2addc570-942f-4814-8c07-25bf4a24f82e" value="SCLK" />
+      <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="ZCD" />
       <Data key="8dc39408-3639-49b9-bbec-35d675d93b5b" value="SS" />
       <Data key="404b0c55-d60d-498f-adb4-aa43018ec80a" value="pin_CS" />
       <Data key="4955f710-a928-47ad-a652-c314864e617c/23b8206d-1c77-4e61-be4a-b4037d5de5fc" value="UART_1_tx" />
       <Data key="4955f710-a928-47ad-a652-c314864e617c/78e33e5d-45ea-4b75-88d5-73274e8a7ce4" value="UART_1_rx" />
-      <Data key="621654c3-58d9-42c7-b9f4-89fc5b40e654" value="CompNeg" />
+      <Data key="621654c3-58d9-42c7-b9f4-89fc5b40e654" value="compNeg" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="IDAC1_OUT" />
       <Data key="a0ad86df-8b8d-4645-9b36-dcccbcb356d3" value="sw_hi" />
       <Data key="bdfaa2ef-7fe3-4cc6-8163-2c41549873c3" value="DAC_PWM" />
-      <Data key="c27b6a5f-e6e6-4bcf-85dc-fc874dbb1b45" value="CompPos" />
+      <Data key="c27b6a5f-e6e6-4bcf-85dc-fc874dbb1b45" value="compPos" />
       <Data key="d6c1e020-a859-4581-ace1-f0cb5d384d49" value="pin_DC" />
       <Data key="e501f414-0732-4a43-8c05-cd089052589c" value="COMP_DDFT0_Out" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="MOSI" />
@@ -1390,6 +1391,11 @@
     <Group key="2addc570-942f-4814-8c07-25bf4a24f82e">
       <Group key="0">
         <Data key="Port Format" value="0,6" />
+      </Group>
+    </Group>
+    <Group key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba">
+      <Group key="0">
+        <Data key="Port Format" value="2,7" />
       </Group>
     </Group>
     <Group key="8dc39408-3639-49b9-bbec-35d675d93b5b">
