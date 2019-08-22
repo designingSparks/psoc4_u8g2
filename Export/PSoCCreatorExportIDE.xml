@@ -294,6 +294,20 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ZCD.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ZCD_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ZCD_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\isr_ADC.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\isr_ADC.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vin_adc.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vin_adc.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vin_adc_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Vin_adc_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_IRQ.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_IRQ.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_intClock.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_intClock.h</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

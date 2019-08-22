@@ -22,8 +22,11 @@
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="ZCD" />
       <Data key="8dc39408-3639-49b9-bbec-35d675d93b5b" value="SS" />
       <Data key="404b0c55-d60d-498f-adb4-aa43018ec80a" value="pin_CS" />
+      <Data key="550d8300-5f38-44df-8609-64125103703c" value="UART_pin" />
+      <Data key="916d2763-dd14-44e4-b0c7-1efecaf972f0" value="Pin_1" />
       <Data key="4955f710-a928-47ad-a652-c314864e617c/23b8206d-1c77-4e61-be4a-b4037d5de5fc" value="UART_1_tx" />
       <Data key="4955f710-a928-47ad-a652-c314864e617c/78e33e5d-45ea-4b75-88d5-73274e8a7ce4" value="UART_1_rx" />
+      <Data key="435901f4-cd1a-4e51-b317-a385605b3cbd" value="Vin_adc" />
       <Data key="621654c3-58d9-42c7-b9f4-89fc5b40e654" value="compNeg" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="IDAC1_OUT" />
       <Data key="a0ad86df-8b8d-4645-9b36-dcccbcb356d3" value="sw_hi" />
@@ -1408,14 +1411,24 @@
         <Data key="Port Format" value="1,0" />
       </Group>
     </Group>
+    <Group key="550d8300-5f38-44df-8609-64125103703c">
+      <Group key="0">
+        <Data key="Port Format" value="4,0" />
+      </Group>
+    </Group>
+    <Group key="916d2763-dd14-44e4-b0c7-1efecaf972f0">
+      <Group key="0">
+        <Data key="Port Format" value="3,0" />
+      </Group>
+    </Group>
     <Group key="4955f710-a928-47ad-a652-c314864e617c/23b8206d-1c77-4e61-be4a-b4037d5de5fc">
       <Group key="0">
         <Data key="Port Format" value="4,1" />
       </Group>
     </Group>
-    <Group key="4955f710-a928-47ad-a652-c314864e617c/78e33e5d-45ea-4b75-88d5-73274e8a7ce4">
+    <Group key="435901f4-cd1a-4e51-b317-a385605b3cbd">
       <Group key="0">
-        <Data key="Port Format" value="4,0" />
+        <Data key="Port Format" value="2,0" />
       </Group>
     </Group>
     <Group key="621654c3-58d9-42c7-b9f4-89fc5b40e654">
@@ -1458,7 +1471,11 @@
         <Data key="Port Format" value="0,4" />
       </Group>
     </Group>
-    <Group key="UnAssigned Pins" />
+    <Group key="UnAssigned Pins">
+      <Group key="4955f710-a928-47ad-a652-c314864e617c/78e33e5d-45ea-4b75-88d5-73274e8a7ce4">
+        <Data key="0" value="132086100573155000" />
+      </Group>
+    </Group>
   </Group>
   <Group key="PlaceDir">
     <Data key="count" value="0" />

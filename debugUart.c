@@ -34,6 +34,11 @@ cmdReceived_callback fn_cmdReceived; //callback function
 void uartInit(cmdReceived_callback cb)
 {
   fn_cmdReceived = cb;
+  // Configure UART_Rx pin to be controlled in firmware
+  //CY_SET_REG32 (CYREG_HSIOM_PORT_SEL4, CY_GET_REG32 (CYREG_HSIOM_PORT_SEL4) & 0xFFFFFFF0);
+  //UART_1_tx_SetDriveMode(UART_1_tx_DM_RES_UP);
+  //UART_1_rx_SetDriveMode(UART_1_rx_DM_RES_UP);
+  
   UART_1_Start();
   UART_RX_ISR_StartEx(uartRxISR); //Use my custom ISR handler
 }
