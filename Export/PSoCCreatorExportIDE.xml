@@ -242,13 +242,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC1_OUT.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC1_OUT_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC1_OUT_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DAC_PWM_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_2.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_2.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_T2.c</File>
@@ -308,6 +301,13 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_IRQ.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_intClock.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_intClock.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_Buzzer.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_Buzzer.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_Buzzer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BUZ.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BUZ.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BUZ_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BUZ_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

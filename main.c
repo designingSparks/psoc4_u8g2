@@ -25,7 +25,8 @@ int main(void)
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     IDAC_1_Start();
-    PWM_1_Start();
+    //PWM_1_Start();
+    PWM_Buzzer_Start();
     SPIMaster_Start();
     uartInit(cmdCallback); //Register callback function console.c
     init_Oled();

@@ -108,7 +108,7 @@ void processCommand(void)
       else if (cmd == WRITE && param == DACPWM)
       {
         dbg_printf("Write DACPWM: %d\n", int_val);
-        PWM_1_WriteCompare(int_val); //The PWM has double buffered capture/compare
+        //PWM_1_WriteCompare(int_val); //The PWM has double buffered capture/compare
       }
       else if (cmd == WRITE && param == IDAC)
       {
