@@ -42,12 +42,14 @@
           <File BuildType="BUILD" Toolchain="">debugUart.c</File>
           <File BuildType="BUILD" Toolchain="">console.c</File>
           <File BuildType="BUILD" Toolchain="">oled.c</File>
+          <File BuildType="BUILD" Toolchain="">buttons.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">oled.h</File>
           <File BuildType="BUILD" Toolchain="">console.h</File>
           <File BuildType="BUILD" Toolchain="">utilities.h</File>
           <File BuildType="BUILD" Toolchain="">debugUart.h</File>
           <File BuildType="BUILD" Toolchain="">commands.h</File>
+          <File BuildType="BUILD" Toolchain="">buttons.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn">
@@ -308,6 +310,18 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BUZ.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BUZ_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BUZ_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

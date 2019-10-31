@@ -13,6 +13,7 @@
 #include "oled.h"
 #include "debugUart.h"
 #include "console.h"
+#include "buttons.h"
 
 //Prototypes
 //void initialize();
@@ -65,8 +66,11 @@ int main(void)
         /* Place your application code here. */
       //SPIMaster_WriteTxData(i);
       //UART_1_UartPutString("Hello world\n");
-      processCommand();
-      CyDelay(200);
+      //processCommand();
+      debounceButtons();
+      updateOutputs();
+      CyDelay(5);
+      
     }
 }
 
