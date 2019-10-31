@@ -93,14 +93,18 @@ void updateOutputs(void)
     temp = temp - 100;
     if (temp < 6000)
       temp = 6000;
+    
+    
+    /*
     PWM_Buzzer_Stop();
     PWM_Buzzer_WritePeriod(temp);
     PWM_Buzzer_WriteCompare(temp/2);
     PWM_Buzzer_Start();
-    //PWM_Buzzer_WritePeriodBuf(temp);
-    //PWM_Buzzer_WriteCompareBuf(temp/2);
-    //PWM_Buzzer_SetPeriodSwap(1);
-    //PWM_Buzzer_SetCompareSwap(1);
+    */
+    
+    PWM_Buzzer_WritePeriodBuf(temp);
+    PWM_Buzzer_WriteCompareBuf(temp/2);
+    
   }
     
   
@@ -109,10 +113,8 @@ void updateOutputs(void)
     temp = temp + 100;
     if (temp > 24000)
       temp = 24000;
-    PWM_Buzzer_Stop();
-    PWM_Buzzer_WritePeriod(temp);
-    PWM_Buzzer_WriteCompare(temp/2);
-    PWM_Buzzer_Start();
+    PWM_Buzzer_WritePeriodBuf(temp);
+    PWM_Buzzer_WriteCompareBuf(temp/2);
   }
   
 }

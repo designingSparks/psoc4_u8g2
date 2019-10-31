@@ -18,15 +18,17 @@
 //Prototypes
 //void initialize();
 void Lpcomp_DDFT_Out(void);
+void taskHandler(void);
 
 int main(void)
 {
     
-    CyGlobalIntEnable; /* Enable global interrupts. */
+    
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     IDAC_1_Start();
     //PWM_1_Start();
+    
     PWM_Buzzer_Start();
     SPIMaster_Start();
     uartInit(cmdCallback); //Register callback function console.c
@@ -61,9 +63,13 @@ int main(void)
     UART_1_UartPutString("Hello world\n");
     UART_1_UartPutString("John Schon\n");
     
-    for(i = 0;; i++)
+    CySysTickStart();
+    CySysTickSetCallback(0, taskHandler);
+    CyGlobalIntEnable; /* Enable global interrupts. */
+    
+   /* for(i = 0;; i++)
     {
-        /* Place your application code here. */
+        // Place your application code here.
       //SPIMaster_WriteTxData(i);
       //UART_1_UartPutString("Hello world\n");
       //processCommand();
@@ -71,8 +77,24 @@ int main(void)
       updateOutputs();
       CyDelay(5);
       
-    }
+    }*/
 }
+
+//Crude task handler based on 1ms sysTick interrupt
+void taskHandler(void)
+{
+  static uint8_t i;
+     
+  if (i < 5)
+    i++;
+  else
+  {
+    i = 0;
+    debounceButtons();
+    updateOutputs();
+  }
+}
+
 
 //Connect comparator outputs to physical pins
 void Lpcomp_DDFT_Out(void)
