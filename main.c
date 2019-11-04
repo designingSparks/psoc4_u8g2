@@ -29,13 +29,14 @@ int main(void)
     IDAC_1_Start();
     //PWM_1_Start();
     
-    PWM_Buzzer_Start();
+    //PWM_Buzzer_Start();
+    PWM_TON_Start();
+	  PWM_T2_Start();
+    
     SPIMaster_Start();
     uartInit(cmdCallback); //Register callback function console.c
     init_Oled();
     
-    PWM_TON_Start();
-	  PWM_T2_Start();
     Counter_Start();
     
     LPComp_0_Start();    
@@ -44,8 +45,10 @@ int main(void)
     
     //Apply start pulse to Timer and low side switch.
   	startPWM_Write(1); //reacts to rising edge
+    CyDelay(1);
   	startPWM_Write(0); 
   
+    PWM_TON_WritePeriod(9600);
     uint8_t i;
     //Variables for emulated EEPROM example
     static const uint8 CYCODE eepromArray[]=
@@ -84,14 +87,26 @@ int main(void)
 void taskHandler(void)
 {
   static uint8_t i;
-     
+  uint32_t temp;  
+  
   if (i < 5)
     i++;
   else
   {
     i = 0;
+  
     debounceButtons();
     updateOutputs();
+    
+    //Test
+    //temp = PWM_Buzzer_ReadPeriod();
+    //temp = temp + 100;
+    //if (temp >= 24000)
+     // temp = 6000;
+    //PWM_Buzzer_WritePeriod(temp); //Instant update works but has glitches.
+    //PWM_Buzzer_WriteCompare(temp/2);
+    //PWM_Buzzer_WritePeriodBuf(temp); //Buffered update has no glitches but has beat frequencies
+    //PWM_Buzzer_WriteCompareBuf(temp/2);
   }
 }
 

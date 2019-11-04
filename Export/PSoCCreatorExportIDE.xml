@@ -255,14 +255,14 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_0.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_0.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_0_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\compPos.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\compPos.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\compPos_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\compPos_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\compNeg.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\compNeg.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\compNeg_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\compNeg_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi_aliases.h</File>
@@ -275,9 +275,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\startPWM_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CyClock_24.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CyClock_24.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Control_Reg_enableSwap.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Control_Reg_enableSwap.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Control_Reg_enableSwap_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Counter.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Counter.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Counter_PM.c</File>
@@ -322,6 +319,18 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
