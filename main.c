@@ -27,6 +27,7 @@ int main(void)
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     IDAC_1_Start();
+    IDAC_1_SetValue(208);
     //PWM_1_Start();
     
     //PWM_Buzzer_Start();
