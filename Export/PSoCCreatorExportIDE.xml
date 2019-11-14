@@ -331,6 +331,20 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompPos_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT1_Out.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT1_Out.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT1_Out_aliases.h</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

@@ -27,7 +27,7 @@ int main(void)
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     IDAC_1_Start();
-    IDAC_1_SetValue(208);
+    IDAC_1_SetValue(22); //208=500mV
     //PWM_1_Start();
     
     //PWM_Buzzer_Start();
@@ -42,6 +42,7 @@ int main(void)
     
     LPComp_0_Start();    
     LPComp_0_SetSpeed(LPComp_0_HIGHSPEED);
+    LPComp_1_Start();  
 	  Lpcomp_DDFT_Out(); //Wire comparator output to P2.3
     
     //Apply start pulse to Timer and low side switch.
@@ -49,7 +50,7 @@ int main(void)
     CyDelay(1);
   	startPWM_Write(0); 
   
-    PWM_TON_WritePeriod(9600);
+    PWM_TON_WritePeriod(1500); //1000/48e6=20.8us
     uint8_t i;
     //Variables for emulated EEPROM example
     static const uint8 CYCODE eepromArray[]=
@@ -121,9 +122,9 @@ void Lpcomp_DDFT_Out(void)
     (*(reg32 *)CYREG_TST_DDFT_CTRL) |= (11u);
     
     /* clear bit[13:8] for DDFT1 */
-//    (*(reg32 *)CYREG_TST_DDFT_CTRL) &= ~(0x3F << 8);
+    (*(reg32 *)CYREG_TST_DDFT_CTRL) &= ~(0x3F << 8);
     /* select LPCOMP_1 as DDFT1 source, DDFT1 output connect to P1[2] directly in the internal */
-//    (*(reg32 *)CYREG_TST_DDFT_CTRL) |= (12u) << 8;
+    (*(reg32 *)CYREG_TST_DDFT_CTRL) |= (12u) << 8;
     
     /* enable DDFT function */
     (*(reg32 *)CYREG_TST_DDFT_CTRL) |= (1u) << 31;
