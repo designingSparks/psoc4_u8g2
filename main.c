@@ -14,6 +14,8 @@
 #include "debugUart.h"
 #include "console.h"
 #include "buttons.h"
+#include "encoder.h"
+
 
 //Prototypes
 //void initialize();
@@ -26,9 +28,11 @@ int main(void)
     
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-    IDAC_1_Start();
-    IDAC_1_SetValue(22); //208=500mV
+    IDAC_0_Start();
+    IDAC_0_SetValue(10); //208=500mV, 22=
     //PWM_1_Start();
+    
+    //TODO: Start IDAC_1
     
     //PWM_Buzzer_Start();
     PWM_TON_Start();
@@ -91,6 +95,7 @@ void taskHandler(void)
   static uint8_t i;
   uint32_t temp;  
   
+  updateEncoder();
   if (i < 5)
     i++;
   else
