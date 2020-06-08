@@ -43,6 +43,7 @@
           <File BuildType="BUILD" Toolchain="">console.c</File>
           <File BuildType="BUILD" Toolchain="">oled.c</File>
           <File BuildType="BUILD" Toolchain="">buttons.c</File>
+          <File BuildType="BUILD" Toolchain="">encoder.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">oled.h</File>
           <File BuildType="BUILD" Toolchain="">console.h</File>
@@ -50,6 +51,7 @@
           <File BuildType="BUILD" Toolchain="">debugUart.h</File>
           <File BuildType="BUILD" Toolchain="">commands.h</File>
           <File BuildType="BUILD" Toolchain="">buttons.h</File>
+          <File BuildType="BUILD" Toolchain="">encoder.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn">
@@ -162,10 +164,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SCLK.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SCLK_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SCLK_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SS.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SS.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SS_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SS_PM.c</File>
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">Generated_Source\PSoC4\cm0gcc.ld</File>
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">Generated_Source\PSoC4\Cm0RealView.scat</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Cm0Start.c</File>
@@ -194,18 +192,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.scat</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_DC.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_DC.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_DC_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_DC_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_RES.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_RES.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_RES_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_RES_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_CS.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_CS.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_CS_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\pin_CS_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_1_SPI_UART.h</File>
@@ -259,10 +245,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CompNeg_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_hi_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT0_Out.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT0_Out.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT0_Out_aliases.h</File>
@@ -315,18 +297,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug3_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_1_PM.c</File>
@@ -343,6 +313,25 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\COMP_DDFT1_Out_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CyClock_1MHz.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\CyClock_1MHz.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_DC.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_DC.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_DC_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_DC_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_CS.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_CS.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_CS_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_CS_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC_0.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC_0.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC_0_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC0_OUT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC0_OUT.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC0_OUT_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\IDAC0_OUT_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_coil.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_coil.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_coil_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_coil_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

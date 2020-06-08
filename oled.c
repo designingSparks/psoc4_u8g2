@@ -103,30 +103,31 @@ uint8_t psoc_byte_4wire_sw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void 
     //Set CS default level and init SPI clock.
     //Not needed as this is done elsewhere
     case U8X8_MSG_BYTE_INIT:
-      pin_CS_Write(u8x8->display_info->chip_disable_level); //Other SS line
-      //Apply reset pulse
-      pin_RES_Write(1);
+      OLED_CS_Write(u8x8->display_info->chip_disable_level); //Other SS line
+      //Apply reset pulse - This is now done in hardware
+      /*pin_RES_Write(1);
       CyDelay(1);
       pin_RES_Write(0);
       CyDelay(10);
       pin_RES_Write(1);
+        */
       break;
     
     //Set the level of the data/command pin to arg_int
     case U8X8_MSG_BYTE_SET_DC:
-      pin_DC_Write(arg_int);
+      OLED_DC_Write(arg_int);
       break;
     
     //U8X8_MSG_BYTE_START_TRANSFER and U8X8_MSG_BYTE_END_TRANSFER basically just control the SS line via software
     //They basically stretch the SS signal
     case U8X8_MSG_BYTE_START_TRANSFER:
-      pin_CS_Write(u8x8->display_info->chip_enable_level);
+      OLED_CS_Write(u8x8->display_info->chip_enable_level);
       u8x8->gpio_and_delay_cb(u8x8, U8X8_MSG_DELAY_NANO, u8x8->display_info->post_chip_enable_wait_ns, NULL); //delay
       break;
       
     case U8X8_MSG_BYTE_END_TRANSFER: 
       u8x8->gpio_and_delay_cb(u8x8, U8X8_MSG_DELAY_NANO, u8x8->display_info->pre_chip_disable_wait_ns, NULL);
-      pin_CS_Write(u8x8->display_info->chip_disable_level); 
+      OLED_CS_Write(u8x8->display_info->chip_disable_level); 
       CyDelayUs(10); //debug
       break;
       
