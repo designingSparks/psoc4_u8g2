@@ -58,12 +58,15 @@
 <dep name=".\Generated_Source\PSoC4\OLED_CS_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_Buzzer.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_T2.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_TON.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\SW1.h" />
 <dep name=".\Generated_Source\PSoC4\SW1_aliases.h" />
@@ -152,12 +155,15 @@
 <file name=".\Generated_Source\PSoC4\OLED_CS_aliases.h" />
 <file name=".\Generated_Source\PSoC4\OLED_DC.h" />
 <file name=".\Generated_Source\PSoC4\OLED_DC_aliases.h" />
+<file name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<file name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
 <file name=".\Generated_Source\PSoC4\PWM_Buzzer.h" />
 <file name=".\Generated_Source\PSoC4\PWM_T2.h" />
 <file name=".\Generated_Source\PSoC4\PWM_TON.h" />
 <file name=".\Generated_Source\PSoC4\SCLK.h" />
 <file name=".\Generated_Source\PSoC4\SCLK_aliases.h" />
 <file name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<file name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <file name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <file name=".\Generated_Source\PSoC4\SW1.h" />
 <file name=".\Generated_Source\PSoC4\SW1_aliases.h" />
@@ -659,6 +665,26 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\OLED_DC_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\OLED_RES.o">
+<dep name=".\Generated_Source\PSoC4\OLED_RES.c" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\OLED_RES.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\OLED_RES_PM.o">
+<dep name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_PM.c" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\OLED_RES_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\PWM_Buzzer.o">
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
@@ -744,6 +770,7 @@
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.c" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
@@ -755,6 +782,7 @@
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_INT.c" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
@@ -762,10 +790,19 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\SPIMaster_INT.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SPIMaster_IntClock.o">
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.c" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SPIMaster_IntClock.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\SPIMaster_PM.o">
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PM.c" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
@@ -1107,10 +1144,6 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\cyfitter_cfg.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\cymetadata.o">
-<dep name=".\Generated_Source\PSoC4\cymetadata.c" />
-</file>
-<file name=".\Generated_Source\PSoC4\cymetadata.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\cyutils.o">
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
@@ -1226,12 +1259,15 @@
 <dep name=".\Generated_Source\PSoC4\OLED_CS_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_Buzzer.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_T2.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_TON.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\SW1.h" />
 <dep name=".\Generated_Source\PSoC4\SW1_aliases.h" />
@@ -1323,12 +1359,15 @@
 <dep name=".\Generated_Source\PSoC4\OLED_CS_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_Buzzer.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_T2.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_TON.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\SW1.h" />
 <dep name=".\Generated_Source\PSoC4\SW1_aliases.h" />
@@ -1423,12 +1462,15 @@
 <dep name=".\Generated_Source\PSoC4\OLED_CS_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_Buzzer.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_T2.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_TON.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\SW1.h" />
 <dep name=".\Generated_Source\PSoC4\SW1_aliases.h" />
@@ -1518,12 +1560,15 @@
 <dep name=".\Generated_Source\PSoC4\OLED_CS_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_Buzzer.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_T2.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_TON.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\SW1.h" />
 <dep name=".\Generated_Source\PSoC4\SW1_aliases.h" />
@@ -1616,12 +1661,15 @@
 <dep name=".\Generated_Source\PSoC4\OLED_CS_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_Buzzer.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_T2.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_TON.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\SW1.h" />
 <dep name=".\Generated_Source\PSoC4\SW1_aliases.h" />
@@ -1715,12 +1763,15 @@
 <dep name=".\Generated_Source\PSoC4\OLED_CS_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC.h" />
 <dep name=".\Generated_Source\PSoC4\OLED_DC_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES.h" />
+<dep name=".\Generated_Source\PSoC4\OLED_RES_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_Buzzer.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_T2.h" />
 <dep name=".\Generated_Source\PSoC4\PWM_TON.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK.h" />
 <dep name=".\Generated_Source\PSoC4\SCLK_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster.h" />
+<dep name=".\Generated_Source\PSoC4\SPIMaster_IntClock.h" />
 <dep name=".\Generated_Source\PSoC4\SPIMaster_PVT.h" />
 <dep name=".\Generated_Source\PSoC4\SW1.h" />
 <dep name=".\Generated_Source\PSoC4\SW1_aliases.h" />
@@ -1768,212 +1819,6 @@
 <file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
 <file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\SS.o">
-<dep name=".\Generated_Source\PSoC4\SS.c" />
-<dep name=".\Generated_Source\PSoC4\SS.h" />
-<dep name=".\Generated_Source\PSoC4\SS_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\SS.c" />
-<file name=".\Generated_Source\PSoC4\SS.h" />
-<file name=".\Generated_Source\PSoC4\SS_aliases.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\SS_PM.o">
-<dep name=".\Generated_Source\PSoC4\SS.h" />
-<dep name=".\Generated_Source\PSoC4\SS_PM.c" />
-<dep name=".\Generated_Source\PSoC4\SS_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\SS_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\debug1.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\debug1.c" />
-<dep name=".\Generated_Source\PSoC4\debug1.h" />
-<dep name=".\Generated_Source\PSoC4\debug1_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\debug1.c" />
-<file name=".\Generated_Source\PSoC4\debug1.h" />
-<file name=".\Generated_Source\PSoC4\debug1_aliases.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\debug1_PM.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\debug1.h" />
-<dep name=".\Generated_Source\PSoC4\debug1_PM.c" />
-<dep name=".\Generated_Source\PSoC4\debug1_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\debug1_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\debug2.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\debug2.c" />
-<dep name=".\Generated_Source\PSoC4\debug2.h" />
-<dep name=".\Generated_Source\PSoC4\debug2_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\debug2.c" />
-<file name=".\Generated_Source\PSoC4\debug2.h" />
-<file name=".\Generated_Source\PSoC4\debug2_aliases.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\debug2_PM.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\debug2.h" />
-<dep name=".\Generated_Source\PSoC4\debug2_PM.c" />
-<dep name=".\Generated_Source\PSoC4\debug2_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\debug2_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\debug3.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\debug3.c" />
-<dep name=".\Generated_Source\PSoC4\debug3.h" />
-<dep name=".\Generated_Source\PSoC4\debug3_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\debug3.c" />
-<file name=".\Generated_Source\PSoC4\debug3.h" />
-<file name=".\Generated_Source\PSoC4\debug3_aliases.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\debug3_PM.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\debug3.h" />
-<dep name=".\Generated_Source\PSoC4\debug3_PM.c" />
-<dep name=".\Generated_Source\PSoC4\debug3_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\debug3_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\sw_hi.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\sw_hi.c" />
-<dep name=".\Generated_Source\PSoC4\sw_hi.h" />
-<dep name=".\Generated_Source\PSoC4\sw_hi_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\sw_hi.c" />
-<file name=".\Generated_Source\PSoC4\sw_hi.h" />
-<file name=".\Generated_Source\PSoC4\sw_hi_aliases.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\sw_hi_PM.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\sw_hi.h" />
-<dep name=".\Generated_Source\PSoC4\sw_hi_PM.c" />
-<dep name=".\Generated_Source\PSoC4\sw_hi_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\sw_hi_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\IDAC_2.o">
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\IDAC_2.c" />
-<dep name=".\Generated_Source\PSoC4\IDAC_2.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\IDAC_2.c" />
-<file name=".\Generated_Source\PSoC4\IDAC_2.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\IDAC_2_PM.o">
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\IDAC_2.h" />
-<dep name=".\Generated_Source\PSoC4\IDAC_2_PM.c" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\IDAC_2_PM.c" />
-<file name=".\Generated_Source\PSoC4\pin_CS.h" />
-<file name=".\Generated_Source\PSoC4\pin_CS_aliases.h" />
-<file name=".\Generated_Source\PSoC4\pin_DC.h" />
-<file name=".\Generated_Source\PSoC4\pin_DC_aliases.h" />
-<file name=".\Generated_Source\PSoC4\pin_RES.h" />
-<file name=".\Generated_Source\PSoC4\pin_RES_aliases.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\pin_CS.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\pin_CS.c" />
-<dep name=".\Generated_Source\PSoC4\pin_CS.h" />
-<dep name=".\Generated_Source\PSoC4\pin_CS_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\pin_CS.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\pin_CS_PM.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\pin_CS.h" />
-<dep name=".\Generated_Source\PSoC4\pin_CS_PM.c" />
-<dep name=".\Generated_Source\PSoC4\pin_CS_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\pin_CS_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\pin_DC.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\pin_DC.c" />
-<dep name=".\Generated_Source\PSoC4\pin_DC.h" />
-<dep name=".\Generated_Source\PSoC4\pin_DC_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\pin_DC.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\pin_DC_PM.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\pin_DC.h" />
-<dep name=".\Generated_Source\PSoC4\pin_DC_PM.c" />
-<dep name=".\Generated_Source\PSoC4\pin_DC_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\pin_DC_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\pin_RES.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\pin_RES.c" />
-<dep name=".\Generated_Source\PSoC4\pin_RES.h" />
-<dep name=".\Generated_Source\PSoC4\pin_RES_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\pin_RES.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\pin_RES_PM.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\pin_RES.h" />
-<dep name=".\Generated_Source\PSoC4\pin_RES_PM.c" />
-<dep name=".\Generated_Source\PSoC4\pin_RES_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\pin_RES_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\Clock_2.o">
-<dep name=".\Generated_Source\PSoC4\Clock_2.c" />
-<dep name=".\Generated_Source\PSoC4\Clock_2.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\Clock_2.c" />
-<file name=".\Generated_Source\PSoC4\Clock_2.h" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\Clock_SPI.o">
 <dep name=".\Generated_Source\PSoC4\Clock_SPI.c" />
 <dep name=".\Generated_Source\PSoC4\Clock_SPI.h" />
@@ -1983,6 +1828,10 @@
 </file>
 <file name=".\Generated_Source\PSoC4\Clock_SPI.c" />
 <file name=".\Generated_Source\PSoC4\Clock_SPI.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\cymetadata.o">
+<dep name=".\Generated_Source\PSoC4\cymetadata.c" />
+</file>
+<file name=".\Generated_Source\PSoC4\cymetadata.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\eeprom.o">
 <dep name=".\eeprom.c" />
 </file>
@@ -2381,6 +2230,212 @@
 <dep name="..\u8g2\u8x8_u8toa.c" />
 </file>
 <file name="..\u8g2\u8x8_u8toa.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\debug1.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\debug1.c" />
+<dep name=".\Generated_Source\PSoC4\debug1.h" />
+<dep name=".\Generated_Source\PSoC4\debug1_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\debug1.c" />
+<file name=".\Generated_Source\PSoC4\debug1.h" />
+<file name=".\Generated_Source\PSoC4\debug1_aliases.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\debug1_PM.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\debug1.h" />
+<dep name=".\Generated_Source\PSoC4\debug1_PM.c" />
+<dep name=".\Generated_Source\PSoC4\debug1_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\debug1_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\debug2.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\debug2.c" />
+<dep name=".\Generated_Source\PSoC4\debug2.h" />
+<dep name=".\Generated_Source\PSoC4\debug2_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\debug2.c" />
+<file name=".\Generated_Source\PSoC4\debug2.h" />
+<file name=".\Generated_Source\PSoC4\debug2_aliases.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\debug2_PM.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\debug2.h" />
+<dep name=".\Generated_Source\PSoC4\debug2_PM.c" />
+<dep name=".\Generated_Source\PSoC4\debug2_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\debug2_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\debug3.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\debug3.c" />
+<dep name=".\Generated_Source\PSoC4\debug3.h" />
+<dep name=".\Generated_Source\PSoC4\debug3_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\debug3.c" />
+<file name=".\Generated_Source\PSoC4\debug3.h" />
+<file name=".\Generated_Source\PSoC4\debug3_aliases.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\debug3_PM.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\debug3.h" />
+<dep name=".\Generated_Source\PSoC4\debug3_PM.c" />
+<dep name=".\Generated_Source\PSoC4\debug3_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\debug3_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\sw_hi.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\sw_hi.c" />
+<dep name=".\Generated_Source\PSoC4\sw_hi.h" />
+<dep name=".\Generated_Source\PSoC4\sw_hi_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\sw_hi.c" />
+<file name=".\Generated_Source\PSoC4\sw_hi.h" />
+<file name=".\Generated_Source\PSoC4\sw_hi_aliases.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\sw_hi_PM.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\sw_hi.h" />
+<dep name=".\Generated_Source\PSoC4\sw_hi_PM.c" />
+<dep name=".\Generated_Source\PSoC4\sw_hi_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\sw_hi_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SS.o">
+<dep name=".\Generated_Source\PSoC4\SS.c" />
+<dep name=".\Generated_Source\PSoC4\SS.h" />
+<dep name=".\Generated_Source\PSoC4\SS_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SS.c" />
+<file name=".\Generated_Source\PSoC4\SS.h" />
+<file name=".\Generated_Source\PSoC4\SS_aliases.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SS_PM.o">
+<dep name=".\Generated_Source\PSoC4\SS.h" />
+<dep name=".\Generated_Source\PSoC4\SS_PM.c" />
+<dep name=".\Generated_Source\PSoC4\SS_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SS_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\IDAC_2.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\IDAC_2.c" />
+<dep name=".\Generated_Source\PSoC4\IDAC_2.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\IDAC_2.c" />
+<file name=".\Generated_Source\PSoC4\IDAC_2.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\IDAC_2_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\IDAC_2.h" />
+<dep name=".\Generated_Source\PSoC4\IDAC_2_PM.c" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\IDAC_2_PM.c" />
+<file name=".\Generated_Source\PSoC4\pin_CS.h" />
+<file name=".\Generated_Source\PSoC4\pin_CS_aliases.h" />
+<file name=".\Generated_Source\PSoC4\pin_DC.h" />
+<file name=".\Generated_Source\PSoC4\pin_DC_aliases.h" />
+<file name=".\Generated_Source\PSoC4\pin_RES.h" />
+<file name=".\Generated_Source\PSoC4\pin_RES_aliases.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\pin_CS.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\pin_CS.c" />
+<dep name=".\Generated_Source\PSoC4\pin_CS.h" />
+<dep name=".\Generated_Source\PSoC4\pin_CS_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\pin_CS.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\pin_CS_PM.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\pin_CS.h" />
+<dep name=".\Generated_Source\PSoC4\pin_CS_PM.c" />
+<dep name=".\Generated_Source\PSoC4\pin_CS_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\pin_CS_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\pin_DC.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\pin_DC.c" />
+<dep name=".\Generated_Source\PSoC4\pin_DC.h" />
+<dep name=".\Generated_Source\PSoC4\pin_DC_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\pin_DC.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\pin_DC_PM.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\pin_DC.h" />
+<dep name=".\Generated_Source\PSoC4\pin_DC_PM.c" />
+<dep name=".\Generated_Source\PSoC4\pin_DC_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\pin_DC_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\pin_RES.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\pin_RES.c" />
+<dep name=".\Generated_Source\PSoC4\pin_RES.h" />
+<dep name=".\Generated_Source\PSoC4\pin_RES_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\pin_RES.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\pin_RES_PM.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\pin_RES.h" />
+<dep name=".\Generated_Source\PSoC4\pin_RES_PM.c" />
+<dep name=".\Generated_Source\PSoC4\pin_RES_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\pin_RES_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\Clock_2.o">
+<dep name=".\Generated_Source\PSoC4\Clock_2.c" />
+<dep name=".\Generated_Source\PSoC4\Clock_2.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\Clock_2.c" />
+<file name=".\Generated_Source\PSoC4\Clock_2.h" />
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
 </CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
@@ -2565,6 +2620,9 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\IDAC0_OUT_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\sw_coil.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\sw_coil_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\OLED_RES.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\OLED_RES_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SPIMaster_IntClock.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LCD128x64.a" />
 </file>
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
@@ -2577,205 +2635,208 @@
 <CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68 type_name="CyDesigner.Common.ProjMgmt.Common.CyCmdLineData" version="2">
 <genericCmdLineData>
 <name v="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0">
-<name_val_pair name="..\u8g2\u8g2_bitmap.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_box.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_buffer.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_circle.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_cleardisplay.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_d_memory.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_d_setup.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_font.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_fonts.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_hvline.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_input_value.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_intersection.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_kerning.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_line.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_ll_hvline.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_message.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_polygon.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_selection_list.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8g2_setup.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_8x8.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_byte.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_cad.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_a2printer.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_il3820_296x128.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ist3020.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ks0108.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_lc7981.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ld7032_60x32.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ls013b7dh03.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_max7219.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_pcd8544_84x48.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_pcf8812.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_sbn1661.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_sed1330.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1305.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1306_64x32.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1306_64x48.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1306_96x16.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1306_128x32.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1306_128x64_noname.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1309.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1322.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1325.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1326.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1327.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1329.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1606_172x72.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_ssd1607_200x200.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_st7565.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_st7567.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_st7588.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_st7920.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_st75256.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_stdio.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_t6963.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_uc1601.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_uc1604.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_uc1608.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_uc1610.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_uc1611.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_uc1617.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_uc1638.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_uc1701_dogs102.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_d_uc1701_mini12864.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_debounce.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_display.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_fonts.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_gpio.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_input_value.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_message.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_selection_list.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_setup.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_string.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_u8toa.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="..\u8g2\u8x8_u16toa.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="main.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="utilities.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="eeprom.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="debugUart.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="console.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="oled.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="buttons.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cyfitter_cfg.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cymetadata.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CyCLK_48MHz.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\MOSI.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\MOSI_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SPIMaster.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SPIMaster_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SPIMaster_INT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SCLK.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SCLK_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\Clock_SPI.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
+<name_val_pair name="..\u8g2\u8g2_bitmap.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_box.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_buffer.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_circle.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_cleardisplay.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_d_memory.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_d_setup.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_font.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_fonts.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_hvline.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_input_value.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_intersection.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_kerning.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_line.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_ll_hvline.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_message.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_polygon.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_selection_list.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8g2_setup.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_8x8.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_byte.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_cad.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_a2printer.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_il3820_296x128.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ist3020.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ks0108.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_lc7981.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ld7032_60x32.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ls013b7dh03.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_max7219.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_pcd8544_84x48.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_pcf8812.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_sbn1661.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_sed1330.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1305.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1306_64x32.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1306_64x48.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1306_96x16.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1306_128x32.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1306_128x64_noname.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1309.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1322.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1325.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1326.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1327.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1329.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1606_172x72.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_ssd1607_200x200.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_st7565.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_st7567.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_st7588.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_st7920.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_st75256.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_stdio.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_t6963.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_uc1601.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_uc1604.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_uc1608.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_uc1610.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_uc1611.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_uc1617.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_uc1638.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_uc1701_dogs102.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_d_uc1701_mini12864.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_debounce.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_display.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_fonts.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_gpio.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_input_value.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_message.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_selection_list.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_setup.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_string.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_u8toa.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="..\u8g2\u8x8_u16toa.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="main.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="utilities.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="eeprom.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="debugUart.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="console.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="oled.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="buttons.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\cyfitter_cfg.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\cymetadata.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CyCLK_48MHz.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\MOSI.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\MOSI_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SPIMaster.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SPIMaster_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SPIMaster_INT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SCLK.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SCLK_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\Clock_SPI.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
 <name_val_pair name="Generated_Source\PSoC4\SS.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\SS_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\Cm0Start.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -Og" />
+<name_val_pair name="Generated_Source\PSoC4\Cm0Start.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -O1" />
 <name_val_pair name="Generated_Source\PSoC4\CyBootAsmGnu.s" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-<name_val_pair name="Generated_Source\PSoC4\CyFlash.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CyLib.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cyPm.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cyutils.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CyLFClk.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
+<name_val_pair name="Generated_Source\PSoC4\CyFlash.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CyLib.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\cyPm.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\cyutils.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CyLFClk.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
 <name_val_pair name="Generated_Source\PSoC4\pin_DC.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\pin_DC_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\pin_RES.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\pin_RES_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\pin_CS.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\pin_CS_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_SPI_UART.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_SPI_UART_INT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_UART.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_BOOT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_UART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_tx.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_tx_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_rx.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_1_rx_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_RX_ISR.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\v_EEPROM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cy_em_eeprom.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\IDAC_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\IDAC_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\IDAC1_OUT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\IDAC1_OUT_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_SPI_UART.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_SPI_UART_INT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_UART.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_BOOT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_UART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_tx.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_tx_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_rx.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_1_rx_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\UART_RX_ISR.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\v_EEPROM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\cy_em_eeprom.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\IDAC_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\IDAC_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\IDAC1_OUT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\IDAC1_OUT_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
 <name_val_pair name="Generated_Source\PSoC4\Clock_2.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\PWM_T2.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\PWM_T2_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\PWM_TON.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\PWM_TON_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\LPComp_0.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\LPComp_0_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CompPos.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CompPos_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CompNeg.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CompNeg_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_T2.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_T2_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_TON.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_TON_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\LPComp_0.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\LPComp_0_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CompPos.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CompPos_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CompNeg.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CompNeg_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
 <name_val_pair name="Generated_Source\PSoC4\sw_hi.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\sw_hi_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\COMP_DDFT0_Out.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\startPWM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\startPWM_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CyClock_24.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\Counter.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\Counter_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\ISR_decayCount.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\Clock_5.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\ZCD.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\ZCD_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\ADC_SAR.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\ADC_SAR_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\ADC_SAR_INT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\isr_ADC.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\Vin_adc.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\Vin_adc_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\ADC_SAR_IRQ.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\ADC_SAR_intClock.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\PWM_Buzzer.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\PWM_Buzzer_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\BUZ.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\BUZ_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SW1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SW1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SW2.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SW2_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SW3.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\SW3_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
+<name_val_pair name="Generated_Source\PSoC4\COMP_DDFT0_Out.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\startPWM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\startPWM_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CyClock_24.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\Counter.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\Counter_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\ISR_decayCount.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\Clock_5.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\ZCD.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\ZCD_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\ADC_SAR.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\ADC_SAR_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\ADC_SAR_INT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\isr_ADC.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\Vin_adc.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\Vin_adc_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\ADC_SAR_IRQ.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\ADC_SAR_intClock.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_Buzzer.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\PWM_Buzzer_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\BUZ.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\BUZ_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SW1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SW1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SW2.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SW2_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SW3.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SW3_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
 <name_val_pair name="Generated_Source\PSoC4\debug1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\debug1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\debug2.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\debug2_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\debug3.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\debug3_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn\CortexM0\ARM_GCC_541\Debug\LCD128x64.hex" v="-mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -finline-functions -Og -flto -ffat-lto-objects" />
-<name_val_pair name="Generated_Source\PSoC4\LPComp_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\LPComp_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CompPos_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CompPos_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CompNeg_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CompNeg_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\COMP_DDFT1_Out.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CyClock_1MHz.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\OLED_DC.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\OLED_DC_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\OLED_CS.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\OLED_CS_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\IDAC_0.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\IDAC_0_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\IDAC0_OUT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\IDAC0_OUT_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
+<name_val_pair name="C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn\CortexM0\ARM_GCC_541\Debug\LCD128x64.hex" v="-mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -finline-functions -O1 -flto -ffat-lto-objects" />
+<name_val_pair name="Generated_Source\PSoC4\LPComp_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\LPComp_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CompPos_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CompPos_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CompNeg_1.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CompNeg_1_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\COMP_DDFT1_Out.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\CyClock_1MHz.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\OLED_DC.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\OLED_DC_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\OLED_CS.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\OLED_CS_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\IDAC_0.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\IDAC_0_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\IDAC0_OUT.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\IDAC0_OUT_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
 <name_val_pair name="Generated_Source\PSoC4\IDAC_2.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
 <name_val_pair name="Generated_Source\PSoC4\IDAC_2_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="encoder.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\sw_coil.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
-<name_val_pair name="Generated_Source\PSoC4\sw_coil_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -Og" />
+<name_val_pair name="encoder.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\sw_coil.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\sw_coil_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\OLED_RES.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\OLED_RES_PM.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
+<name_val_pair name="Generated_Source\PSoC4\SPIMaster_IntClock.c" v="-mcpu=cortex-m0 -mthumb -IC:\Users\john.schoenberger\Documents\PSoC_Creator\u8g2-master\csrc -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -finline-functions -flto -O1" />
 </name>
 </genericCmdLineData>
-<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\john.schoenberger\AppData\Local\Cypress Semiconductor\PSoC Creator\4.3&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn\LCD128x64.cyprj -d CY8C4245AXI-483 -s C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
+<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\john.schoenberger\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn\LCD128x64.cyprj -d CY8C4245AXI-483 -s C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
 </CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68>
 </dataGuid>
 <dataGuid v="925cc1e1-309e-4e08-b0a1-09a83c35b157">
@@ -2850,12 +2911,6 @@
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\version.cypatch</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_SPI_Master_v2_50\B_SPI_Master_v2_50.cysym</v>
-<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_SPI_Master_v2_50\B_SPI_Master_v2_50.v</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.cysym</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.pdf</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\version.cypatch</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cyprimitive</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cysym</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
@@ -2864,6 +2919,12 @@
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\PSoC4\API\clk.c</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\PSoC4\API\clk.h</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_SPI_Master_v2_50\B_SPI_Master_v2_50.cysym</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_SPI_Master_v2_50\B_SPI_Master_v2_50.v</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.cysym</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.pdf</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\version.cypatch</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.cysym</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.cystate</v>
@@ -3540,18 +3601,24 @@
 <v>Generated_Source\PSoC4\sw_coil.h</v>
 <v>Generated_Source\PSoC4\sw_coil_aliases.h</v>
 <v>Generated_Source\PSoC4\sw_coil_PM.c</v>
+<v>Generated_Source\PSoC4\OLED_RES.c</v>
+<v>Generated_Source\PSoC4\OLED_RES.h</v>
+<v>Generated_Source\PSoC4\OLED_RES_aliases.h</v>
+<v>Generated_Source\PSoC4\OLED_RES_PM.c</v>
+<v>Generated_Source\PSoC4\SPIMaster_IntClock.c</v>
+<v>Generated_Source\PSoC4\SPIMaster_IntClock.h</v>
 </gen_list>
 <warp_dep>
-<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
-<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
-<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\warp\lib\common\cypress.v</v>
-<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\warp\lib\common\cy_psoc3_inc.v</v>
-<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
-<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
+<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
+<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
+<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v</v>
+<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v</v>
+<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
+<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="132361211061734093" />
+<deps_time v="132362588626789613" />
 <top_block v="TopDesign" />
-<last_generation v="4" />
+<last_generation v="6" />
 <pdl_path v="" />
 <sw_packages />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
@@ -3559,7 +3626,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="132361214070394832" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="132362595187404048" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
@@ -3576,6 +3643,11 @@
 <CyGuid_50eb6c77-9735-4e57-8808-b714f60fbc0d type_name="CyDesigner.Device.FitterPSoC.Common.DesignWideResources.DeviceEditor.CyItemState" version="1" Name="\ADC_SAR:mux_bus_minus_0\" Color="-24190" />
 </ComponentStates>
 </CyGuid_d442b0b8-dd66-4eee-b5be-1cb213792b31>
+</dataGuid>
+<dataGuid v="504337dd-7d07-4bc7-9057-90e60cf6c469">
+<CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469 type_name="CyDesigner.Common.Debugger.CyBreakpointList" version="1">
+<debugger_breakpoint_list />
+</CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469>
 </dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>

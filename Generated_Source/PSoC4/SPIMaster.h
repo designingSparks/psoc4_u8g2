@@ -28,7 +28,7 @@
 *   Conditional Compilation Parameters
 ***************************************/
 
-#define SPIMaster_INTERNAL_CLOCK             (0u)
+#define SPIMaster_INTERNAL_CLOCK             (1u)
 
 #if(0u != SPIMaster_INTERNAL_CLOCK)
     #include "SPIMaster_IntClock.h"

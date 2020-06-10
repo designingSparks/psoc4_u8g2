@@ -18,9 +18,15 @@ u8g2_t u8g2;
 
 void init_Oled(void)
 {
+    //Tried
+    //u8g2_Setup_sh1106_128x64_noname_1
+    //u8g2_Setup_sh1106_128x64_noname_2 - almost works
+    //u8g2_Setup_sh1106_128x64_winstar_1,2 - Upside down
+    //u8g2_Setup_sh1106_128x64_vcomh0_2 - grey background
+    
     //https://github.com/olikraus/u8g2/wiki/u8g2setupc#introduction
-    u8g2_Setup_ssd1306_128x64_noname_1(&u8g2, U8G2_R0, psoc_byte_4wire_sw_spi, psoc_gpio_and_delay_psoc); //uses less RAM
-    //u8g2_Setup_ssd1306_128x64_noname_f(&u8g2, U8G2_R0, psoc_byte_4wire_sw_spi, psoc_gpio_and_delay_psoc);
+    u8g2_Setup_sh1106_128x64_noname_1(&u8g2, U8G2_R0, psoc_byte_4wire_sw_spi, psoc_gpio_and_delay_psoc); 
+    //u8g2_Setup_ssd1306_128x64_noname_f(&u8g2, U8G2_R0, psoc_byte_4wire_sw_spi, psoc_gpio_and_delay_psoc); //_f uses more RAM
     u8g2_InitDisplay(&u8g2); //calls u8x8_InitDisplay
     u8g2_ClearDisplay(&u8g2);
     u8g2_SetPowerSave(&u8g2, 0); // wake up display
@@ -44,8 +50,10 @@ void init_Oled(void)
     //The list of fonts is here: https://github.com/olikraus/u8g2/wiki/fntlistall
     u8g2_FirstPage(&u8g2);
     do {
+    u8g2_ClearBuffer(&u8g2);
+    u8g2_DrawFrame(&u8g2, 0, 0, 128, 64);
     u8g2_SetFont(&u8g2, u8g2_font_helvR14_tr); // //u8g2_font_helvR14_tr
-    u8g2_DrawStr(&u8g2, 0,20,"Hello World!");
+    u8g2_DrawStr(&u8g2, 0,20,"Hello John!");
     u8g2_SetFont(&u8g2, u8g2_font_profont22_tn);
     u8g2_DrawStr(&u8g2, 0,40,"12345");
     u8g2_SetFont(&u8g2, u8g2_font_helvR14_tr);
@@ -105,12 +113,11 @@ uint8_t psoc_byte_4wire_sw_spi(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void 
     case U8X8_MSG_BYTE_INIT:
       OLED_CS_Write(u8x8->display_info->chip_disable_level); //Other SS line
       //Apply reset pulse - This is now done in hardware
-      /*pin_RES_Write(1);
+      OLED_RES_Write(1);
       CyDelay(1);
-      pin_RES_Write(0);
+      OLED_RES_Write(0);
       CyDelay(10);
-      pin_RES_Write(1);
-        */
+      OLED_RES_Write(1);
       break;
     
     //Set the level of the data/command pin to arg_int
