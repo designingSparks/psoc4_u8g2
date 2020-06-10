@@ -25,7 +25,7 @@ void init_Oled(void)
     //u8g2_Setup_sh1106_128x64_vcomh0_2 - grey background
     
     //https://github.com/olikraus/u8g2/wiki/u8g2setupc#introduction
-    u8g2_Setup_sh1106_128x64_noname_1(&u8g2, U8G2_R0, psoc_byte_4wire_sw_spi, psoc_gpio_and_delay_psoc); 
+    u8g2_Setup_sh1106_128x64_noname_1(&u8g2, U8G2_R0, psoc_byte_i2c, psoc_gpio_and_delay_psoc); 
     //u8g2_Setup_ssd1306_128x64_noname_f(&u8g2, U8G2_R0, psoc_byte_4wire_sw_spi, psoc_gpio_and_delay_psoc); //_f uses more RAM
     u8g2_InitDisplay(&u8g2); //calls u8x8_InitDisplay
     u8g2_ClearDisplay(&u8g2);
@@ -85,6 +85,53 @@ uint8_t psoc_lcd_callback(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_
         break;
     }
     return 1;
+}
+
+
+uint8_t psoc_byte_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
+{
+    uint8_t *data;
+    uint8_t num_bytes;
+    static uint8_t buffer[32];		/* u8g2/u8x8 will never send more than 32 bytes between START_TRANSFER and END_TRANSFER */
+    static uint8_t buf_idx;
+    
+    switch(msg)
+    {
+    case U8X8_MSG_BYTE_SEND:
+        //num_bytes = 0;
+        data = (uint8_t *)arg_ptr;      
+        while( arg_int > 0 )
+        {
+        	//buffer[buf_idx++] = *data;
+            I2C_1_I2CMasterWriteByte(*data, 10);
+        	data++;
+        	arg_int--;
+            //num_bytes++;
+        }      
+        break;
+        
+    case U8X8_MSG_BYTE_INIT:
+        /* add your custom code to init i2c subsystem */
+        break;
+        
+    case U8X8_MSG_BYTE_SET_DC:
+        /* ignored for i2c */
+        break;
+        
+    case U8X8_MSG_BYTE_START_TRANSFER: //with SPI CS is set here
+        
+        I2C_1_I2CMasterSendStart(u8x8_GetI2CAddress(u8x8) >> 1, I2C_1_I2C_WRITE_XFER_MODE, 100);
+        break;
+        
+    case U8X8_MSG_BYTE_END_TRANSFER:
+        //uint32 I2C_1_I2CMasterWriteBuf(uint32 slaveAddress, uint8 * wrData, uint32 cnt, uint32 mode)
+        I2C_1_I2CMasterSendStop(100);
+        break;
+    
+    default:
+      return 0;
+  }
+  return 1;
 }
 
 

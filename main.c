@@ -24,9 +24,6 @@ void taskHandler(void);
 
 int main(void)
 {
-    
-    
-
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     IDAC_0_Start();
     IDAC_0_SetValue(10); //208=500mV, 22=
@@ -38,8 +35,10 @@ int main(void)
     PWM_TON_Start();
 	  PWM_T2_Start();
     
-    SPIMaster_Start();
-    uartInit(cmdCallback); //Register callback function console.c
+    //SPIMaster_Start();
+    I2C_1_Start();
+    
+    //uartInit(cmdCallback); //Register callback function console.c
     init_Oled();
     
     Counter_Start();
@@ -68,9 +67,9 @@ int main(void)
     
     
     //UART testing
-    UART_1_UartPutString("UART Initialised\n");
-    UART_1_UartPutString("Hello world\n");
-    UART_1_UartPutString("John Schon\n");
+    //UART_1_UartPutString("UART Initialised\n");
+    //UART_1_UartPutString("Hello world\n");
+    //UART_1_UartPutString("John Schon\n");
     
     CySysTickStart();
     CySysTickSetCallback(0, taskHandler);
