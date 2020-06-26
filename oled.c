@@ -25,8 +25,9 @@ void init_Oled(void)
     //u8g2_Setup_sh1106_128x64_vcomh0_2 - grey background
     
     //https://github.com/olikraus/u8g2/wiki/u8g2setupc#introduction
-    u8g2_Setup_sh1106_128x64_noname_1(&u8g2, U8G2_R0, psoc_byte_i2c, psoc_gpio_and_delay_psoc); 
+    u8g2_Setup_sh1106_i2c_128x64_noname_1(&u8g2, U8G2_R0, psoc_byte_i2c, psoc_gpio_and_delay_psoc); 
     //u8g2_Setup_ssd1306_128x64_noname_f(&u8g2, U8G2_R0, psoc_byte_4wire_sw_spi, psoc_gpio_and_delay_psoc); //_f uses more RAM
+    //u8g2.begin();
     u8g2_InitDisplay(&u8g2); //calls u8x8_InitDisplay
     u8g2_ClearDisplay(&u8g2);
     u8g2_SetPowerSave(&u8g2, 0); // wake up display

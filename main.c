@@ -30,10 +30,12 @@ int main(void)
     //PWM_1_Start();
     
     //TODO: Start IDAC_1
+    //IDAC_1_Start();
+    //IDAC_1_SetValue(
     
     //PWM_Buzzer_Start();
     PWM_TON_Start();
-	  PWM_T2_Start();
+	PWM_T2_Start();
     
     //SPIMaster_Start();
     I2C_1_Start();
@@ -46,7 +48,7 @@ int main(void)
     LPComp_0_Start();    
     LPComp_0_SetSpeed(LPComp_0_HIGHSPEED);
     LPComp_1_Start();  
-	  Lpcomp_DDFT_Out(); //Wire comparator output to P2.3
+	Lpcomp_DDFT_Out(); //Wire comparator output to P2.3
     
     //Apply start pulse to Timer and low side switch.
   	startPWM_Write(1); //reacts to rising edge
@@ -62,10 +64,7 @@ int main(void)
     uint8 array[]              ={ 0x50, 0x6F, 0x77, 0x65, 0x72, 0x43, 0x79, 0x63, 0x6C, 0x65, 0x23, 0x20, 0x30, 0x00 };
                                 /* P     o     w     e     r     C     y     c     l     e     #           0*/
     
-    
 
-    
-    
     //UART testing
     //UART_1_UartPutString("UART Initialised\n");
     //UART_1_UartPutString("Hello world\n");
