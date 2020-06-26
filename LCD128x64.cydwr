@@ -45,6 +45,7 @@
       <Data key="3980e7b7-58fd-4ea8-997f-c185bf76ec20" value="sw_coil" />
       <Data key="4955f710-a928-47ad-a652-c314864e617c/23b8206d-1c77-4e61-be4a-b4037d5de5fc" value="UART_1_tx" />
       <Data key="4955f710-a928-47ad-a652-c314864e617c/78e33e5d-45ea-4b75-88d5-73274e8a7ce4" value="UART_1_rx" />
+      <Data key="5818bf30-bbe0-4d65-ac3f-cc810c5f557b" value="debug1" />
       <Data key="6054af4e-528a-44f7-8bc8-3ce5df12954e" value="ZC_count" />
       <Data key="435901f4-cd1a-4e51-b317-a385605b3cbd" value="Vin_adc" />
       <Data key="556383ab-629c-45fb-a391-b9edeecbdf46" value="SW3" />
@@ -54,7 +55,10 @@
       <Data key="29988861-0896-4d2f-b98a-dc2f8eb8d928" value="COMP_DDFT1_Out" />
       <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="IDAC0_OUT" />
       <Data key="a0ad86df-8b8d-4645-9b36-dcccbcb356d3" value="debug1" />
+      <Data key="a7d27410-faa6-4089-9862-200cc7214de5" value="Debug" />
       <Data key="a9cbe19c-9c02-4b13-8b02-5d01fdae9ed9" value="CompPos_1" />
+      <Data key="a97aee11-807d-4b30-9240-a1f8cb32d5fc" value="Debug2" />
+      <Data key="bd399d92-abcb-4eab-99e0-8686263bd6aa" value="debug2" />
       <Data key="bdfaa2ef-7fe3-4cc6-8163-2c41549873c3" value="DAC_PWM" />
       <Data key="c7f88426-134c-4f4b-a3ae-0e3f6c8fb3e2" value="SW2" />
       <Data key="c27b6a5f-e6e6-4bcf-85dc-fc874dbb1b45" value="CompPos" />
@@ -1639,6 +1643,11 @@
         <Data key="Port Format" value="4,0" />
       </Group>
     </Group>
+    <Group key="5818bf30-bbe0-4d65-ac3f-cc810c5f557b">
+      <Group key="0">
+        <Data key="Port Format" value="2,4" />
+      </Group>
+    </Group>
     <Group key="6054af4e-528a-44f7-8bc8-3ce5df12954e">
       <Group key="0">
         <Data key="Port Format" value="2,5" />
@@ -1674,9 +1683,24 @@
         <Data key="Port Format" value="0,7" />
       </Group>
     </Group>
+    <Group key="a7d27410-faa6-4089-9862-200cc7214de5">
+      <Group key="0">
+        <Data key="Port Format" value="2,5" />
+      </Group>
+    </Group>
     <Group key="a9cbe19c-9c02-4b13-8b02-5d01fdae9ed9">
       <Group key="0">
         <Data key="Port Format" value="0,2" />
+      </Group>
+    </Group>
+    <Group key="a97aee11-807d-4b30-9240-a1f8cb32d5fc">
+      <Group key="0">
+        <Data key="Port Format" value="2,5" />
+      </Group>
+    </Group>
+    <Group key="bd399d92-abcb-4eab-99e0-8686263bd6aa">
+      <Group key="0">
+        <Data key="Port Format" value="2,5" />
       </Group>
     </Group>
     <Group key="bdfaa2ef-7fe3-4cc6-8163-2c41549873c3">

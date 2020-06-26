@@ -235,10 +235,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ISR_decayCount.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_5.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_5.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ZCD.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ZCD.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ZCD_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ZCD_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_SAR_PM.c</File>
@@ -272,6 +268,10 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SW3_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug2_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LPComp_1_PM.c</File>
@@ -307,10 +307,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_coil.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_coil_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\sw_coil_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_RES.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_RES.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_RES_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OLED_RES_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SPIMaster_IntClock.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SPIMaster_IntClock.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\I2C_1.c</File>
@@ -338,6 +334,10 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\I2C_1_scl_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\I2C_1_SCB_IRQ.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\I2C_1_SCB_IRQ.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\debug1_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
