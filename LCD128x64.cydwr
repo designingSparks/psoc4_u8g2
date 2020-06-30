@@ -35,6 +35,7 @@
       <Data key="6dc77e4e-bc8c-4295-99cc-90b34f4b7588/fda621bb-08c1-4eea-8d96-5e8ca429833e" value="CapSense_1_Shield" />
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="ZCD" />
       <Data key="8dc39408-3639-49b9-bbec-35d675d93b5b" value="SS" />
+      <Data key="12bf794d-f21a-47c0-9b9b-a7d52541cd4e" value="OLED_SCLK" />
       <Data key="57a64df1-e382-471a-8a13-50518871acef" value="IDAC1_OUT" />
       <Data key="57b0fdcd-3be0-4897-9bbd-d7692287041a" value="SW1" />
       <Data key="74a257f1-0a5c-4a00-92a1-94d366e60d60" value="debug2" />
@@ -1596,6 +1597,11 @@
     <Group key="8dc39408-3639-49b9-bbec-35d675d93b5b">
       <Group key="0">
         <Data key="Port Format" value="1,0" />
+      </Group>
+    </Group>
+    <Group key="12bf794d-f21a-47c0-9b9b-a7d52541cd4e">
+      <Group key="0">
+        <Data key="Port Format" value="0,6" />
       </Group>
     </Group>
     <Group key="57a64df1-e382-471a-8a13-50518871acef">

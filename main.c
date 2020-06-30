@@ -26,7 +26,7 @@ int main(void)
 {
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     IDAC_0_Start();
-    IDAC_0_SetValue(10); //208=500mV, 22=
+    IDAC_0_SetValue(30); //208=500mV, 22=
     //PWM_1_Start();
     
     //TODO: Start IDAC_1
@@ -34,6 +34,7 @@ int main(void)
     //IDAC_1_SetValue(
     
     //PWM_Buzzer_Start();
+    PWM_TON_WritePeriod(6000); //1000/48e6=20.8us
     PWM_TON_Start();
 	PWM_T2_Start();
     
@@ -55,7 +56,7 @@ int main(void)
     CyDelay(1);
   	startPWM_Write(0); 
   
-    PWM_TON_WritePeriod(1500); //1000/48e6=20.8us
+    
     uint8_t i;
     //Variables for emulated EEPROM example
     static const uint8 CYCODE eepromArray[]=
@@ -86,6 +87,9 @@ int main(void)
       
     }*/
 }
+
+//PWM_TON_ReadCounter();
+
 
 //Crude task handler based on 1ms sysTick interrupt
 void taskHandler(void)
