@@ -50,7 +50,7 @@ int main(void)
     //SPIMaster_Start();
     //I2C_1_Start();
     
-    //uartInit(cmdCallback); //Register callback function console.c
+    uartInit(cmdCallback); //Register callback function console.c
     //init_Oled();
     LPComp_0_Start();    
     LPComp_0_SetSpeed(LPComp_0_HIGHSPEED);
@@ -73,9 +73,9 @@ int main(void)
     
 
     //UART testing
-    //UART_1_UartPutString("UART Initialised\n");
-    //UART_1_UartPutString("Hello world\n");
-    //UART_1_UartPutString("John Schon\n");
+    UART_1_UartPutString("UART Initialised\n");
+    UART_1_UartPutString("Hello world\n");
+    UART_1_UartPutString("John Schon\n");
     
     CySysTickStart();
     CySysTickSetCallback(0, taskHandler);
