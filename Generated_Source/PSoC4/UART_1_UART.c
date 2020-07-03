@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file UART_1_UART.c
-* \version 3.20
+* \version 4.0
 *
 * \brief
 *  This file provides the source code to the API for the SCB Component in
@@ -10,7 +10,7 @@
 *
 *******************************************************************************
 * \copyright
-* Copyright 2013-2016, Cypress Semiconductor Corporation.  All rights reserved.
+* Copyright 2013-2017, Cypress Semiconductor Corporation.  All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.
@@ -72,7 +72,8 @@
         (uint8) UART_1_UART_CTS_ENABLE,
         (uint8) UART_1_UART_CTS_POLARITY,
         (uint8) UART_1_UART_RTS_POLARITY,
-        (uint8) UART_1_UART_RTS_FIFO_LEVEL
+        (uint8) UART_1_UART_RTS_FIFO_LEVEL,
+        (uint8) UART_1_UART_RX_BREAK_WIDTH
     };
 
 
@@ -126,12 +127,12 @@
             /* Set RX direction internal variables */
             UART_1_rxBuffer      =         config->rxBuffer;
             UART_1_rxDataBits    = (uint8) config->dataBits;
-            UART_1_rxBufferSize  = (uint8) config->rxBufferSize;
+            UART_1_rxBufferSize  =         config->rxBufferSize;
 
             /* Set TX direction internal variables */
             UART_1_txBuffer      =         config->txBuffer;
             UART_1_txDataBits    = (uint8) config->dataBits;
-            UART_1_txBufferSize  = (uint8) config->txBufferSize;
+            UART_1_txBufferSize  =         config->txBufferSize;
 
             /* Configure UART interface */
             if(UART_1_UART_MODE_IRDA == config->mode)
@@ -159,7 +160,8 @@
                                         UART_1_GET_UART_RX_CTRL_POLARITY(config->enableInvertedRx)          |
                                         UART_1_GET_UART_RX_CTRL_MP_MODE(config->enableMultiproc)            |
                                         UART_1_GET_UART_RX_CTRL_DROP_ON_PARITY_ERR(config->dropOnParityErr) |
-                                        UART_1_GET_UART_RX_CTRL_DROP_ON_FRAME_ERR(config->dropOnFrameErr);
+                                        UART_1_GET_UART_RX_CTRL_DROP_ON_FRAME_ERR(config->dropOnFrameErr)   |
+                                        UART_1_GET_UART_RX_CTRL_BREAK_WIDTH(config->breakWidth);
 
             if(UART_1_UART_PARITY_NONE != config->parity)
             {
@@ -218,7 +220,7 @@
             UART_1_INTR_MASTER_MASK_REG = UART_1_NO_INTR_SOURCES;
             UART_1_INTR_RX_MASK_REG     = config->rxInterruptMask;
             UART_1_INTR_TX_MASK_REG     = config->txInterruptMask;
-        
+
             /* Configure TX interrupt sources to restore. */
             UART_1_IntrTxMask = LO16(UART_1_INTR_TX_MASK_REG);
 
@@ -286,7 +288,7 @@
         UART_1_INTR_MASTER_MASK_REG = UART_1_UART_DEFAULT_INTR_MASTER_MASK;
         UART_1_INTR_RX_MASK_REG     = UART_1_UART_DEFAULT_INTR_RX_MASK;
         UART_1_INTR_TX_MASK_REG     = UART_1_UART_DEFAULT_INTR_TX_MASK;
-    
+
         /* Configure TX interrupt sources to restore. */
         UART_1_IntrTxMask = LO16(UART_1_INTR_TX_MASK_REG);
 
@@ -530,7 +532,7 @@ void UART_1_UartSetRxAddressMask(uint32 addressMask)
     *   other bits contain the error condition.
     *   - UART_1_UART_RX_OVERFLOW - Attempt to write to a full
     *     receiver FIFO.
-    *   - UART_1_UART_RX_UNDERFLOW	Attempt to read from an empty
+    *   - UART_1_UART_RX_UNDERFLOW    Attempt to read from an empty
     *     receiver FIFO.
     *   - UART_1_UART_RX_FRAME_ERROR - UART framing error detected.
     *   - UART_1_UART_RX_PARITY_ERROR - UART parity error detected.
@@ -749,7 +751,8 @@ void UART_1_UartSetRxAddressMask(uint32 addressMask)
         *  Only available for PSoC 4100 BLE / PSoC 4200 BLE / PSoC 4100M / PSoC 4200M /
         *  PSoC 4200L / PSoC 4000S / PSoC 4100S / PSoC Analog Coprocessor devices.
         *
-        *  \param polarity: Active polarity of CTS output signal.
+        * \param
+        * polarity: Active polarity of CTS output signal.
         *   - UART_1_UART_CTS_ACTIVE_LOW  - CTS signal is active low.
         *   - UART_1_UART_CTS_ACTIVE_HIGH - CTS signal is active high.
         *
@@ -767,6 +770,59 @@ void UART_1_UartSetRxAddressMask(uint32 addressMask)
         }
     #endif /* !(UART_1_CY_SCBIP_V0 || UART_1_CY_SCBIP_V1) */
 
+
+    /*******************************************************************************
+    * Function Name: UART_1_UartSendBreakBlocking
+    ****************************************************************************//**
+    *
+    * Sends a break condition (logic low) of specified width on UART TX line.
+    * Blocks until break is completed. Only call this function when UART TX FIFO
+    * and shifter are empty.
+    *
+    * \param breakWidth
+    * Width of break condition. Valid range is 4 to 16 bits.
+    *
+    * \note
+    * Before sending break all UART TX interrupt sources are disabled. The state
+    * of UART TX interrupt sources is restored before function returns.
+    *
+    * \sideeffect
+    * If this function is called while there is data in the TX FIFO or shifter that
+    * data will be shifted out in packets the size of breakWidth.
+    *
+    *******************************************************************************/
+    void UART_1_UartSendBreakBlocking(uint32 breakWidth)
+    {
+        uint32 txCtrlReg;
+        uint32 txIntrReg;
+
+        /* Disable all UART TX interrupt source and clear UART TX Done history */
+        txIntrReg = UART_1_GetTxInterruptMode();
+        UART_1_SetTxInterruptMode(0u);
+        UART_1_ClearTxInterruptSource(UART_1_INTR_TX_UART_DONE);
+
+        /* Store TX CTRL configuration */
+        txCtrlReg = UART_1_TX_CTRL_REG;
+
+        /* Set break width */
+        UART_1_TX_CTRL_REG = (UART_1_TX_CTRL_REG & (uint32) ~UART_1_TX_CTRL_DATA_WIDTH_MASK) |
+                                        UART_1_GET_TX_CTRL_DATA_WIDTH(breakWidth);
+
+        /* Generate break */
+        UART_1_TX_FIFO_WR_REG = 0u;
+
+        /* Wait for break completion */
+        while (0u == (UART_1_GetTxInterruptSource() & UART_1_INTR_TX_UART_DONE))
+        {
+        }
+
+        /* Clear all UART TX interrupt sources to  */
+        UART_1_ClearTxInterruptSource(UART_1_INTR_TX_ALL);
+
+        /* Restore TX interrupt sources and data width */
+        UART_1_TX_CTRL_REG = txCtrlReg;
+        UART_1_SetTxInterruptMode(txIntrReg);
+    }
 #endif /* (UART_1_UART_TX_DIRECTION) */
 
 
@@ -776,7 +832,7 @@ void UART_1_UartSetRxAddressMask(uint32 addressMask)
     ****************************************************************************//**
     *
     *  Clears and enables an interrupt on a falling edge of the Rx input. The GPIO
-    *  interrupt does not track in the active mode, therefore requires to be 
+    *  interrupt does not track in the active mode, therefore requires to be
     *  cleared by this API.
     *
     *******************************************************************************/
@@ -792,7 +848,7 @@ void UART_1_UartSetRxAddressMask(uint32 addressMask)
         {
             UART_1_UART_RX_CTRL_REG &= (uint32) ~UART_1_UART_RX_CTRL_SKIP_START;
         }
-        
+
         /* Clear RX GPIO interrupt status and pending interrupt in NVIC because
         * falling edge on RX line occurs while UART communication in active mode.
         * Enable interrupt: next interrupt trigger should wakeup device.

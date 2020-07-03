@@ -104,7 +104,7 @@ uint8_t psoc_byte_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
         while( arg_int > 0 )
         {
         	//buffer[buf_idx++] = *data;
-            I2C_1_I2CMasterWriteByte(*data, 10);
+            //I2C_1_I2CMasterWriteByte(*data, 10);
         	data++;
         	arg_int--;
             //num_bytes++;
@@ -121,12 +121,12 @@ uint8_t psoc_byte_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
         
     case U8X8_MSG_BYTE_START_TRANSFER: //with SPI CS is set here
         
-        I2C_1_I2CMasterSendStart(u8x8_GetI2CAddress(u8x8) >> 1, I2C_1_I2C_WRITE_XFER_MODE, 100);
+        //I2C_1_I2CMasterSendStart(u8x8_GetI2CAddress(u8x8) >> 1, I2C_1_I2C_WRITE_XFER_MODE, 100);
         break;
         
     case U8X8_MSG_BYTE_END_TRANSFER:
         //uint32 I2C_1_I2CMasterWriteBuf(uint32 slaveAddress, uint8 * wrData, uint32 cnt, uint32 mode)
-        I2C_1_I2CMasterSendStop(100);
+        //I2C_1_I2CMasterSendStop(100);
         break;
     
     default:

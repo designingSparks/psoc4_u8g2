@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file UART_1_BOOT.h
-* \version 3.20
+* \version 4.0
 *
 * \brief
 *  This file provides constants and parameter values of the bootloader
@@ -10,7 +10,7 @@
 *
 ********************************************************************************
 * \copyright
-* Copyright 2014-2016, Cypress Semiconductor Corporation. All rights reserved.
+* Copyright 2014-2017, Cypress Semiconductor Corporation. All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.
@@ -221,7 +221,7 @@
 * baud rate configuration, can be defined in the project if required.
 */
 #ifndef UART_1_UART_BYTE_TO_BYTE
-    #define UART_1_UART_BYTE_TO_BYTE  (174u)
+    #define UART_1_UART_BYTE_TO_BYTE  (175u)
 #endif /* UART_1_UART_BYTE_TO_BYTE */
 
 #endif /* (CY_SCB_BOOT_UART_1_H) */

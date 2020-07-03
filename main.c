@@ -21,12 +21,20 @@
 //void initialize();
 void Lpcomp_DDFT_Out(void);
 void taskHandler(void);
+CY_ISR(CounterISR);
+
+//Global variable for debugging
+uint32_t count, count1;
+
 
 int main(void)
 {
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     IDAC_0_Start();
-    IDAC_0_SetValue(30); //208=500mV, 22=
+    IDAC_0_SetValue(60); //208=500mV, 22=
+    
+    IDAC_1_Start(); //Reference for decoding comparator
+    IDAC_1_SetValue(64); //92 is interesting when sourcing
     //PWM_1_Start();
     
     //TODO: Start IDAC_1
@@ -37,15 +45,13 @@ int main(void)
     PWM_TON_WritePeriod(6000); //1000/48e6=20.8us
     PWM_TON_Start();
 	PWM_T2_Start();
-    
-    //SPIMaster_Start();
-    I2C_1_Start();
-    
-    //uartInit(cmdCallback); //Register callback function console.c
-    init_Oled();
-    
     Counter_Start();
     
+    //SPIMaster_Start();
+    //I2C_1_Start();
+    
+    //uartInit(cmdCallback); //Register callback function console.c
+    //init_Oled();
     LPComp_0_Start();    
     LPComp_0_SetSpeed(LPComp_0_HIGHSPEED);
     LPComp_1_Start();  
@@ -73,6 +79,8 @@ int main(void)
     
     CySysTickStart();
     CySysTickSetCallback(0, taskHandler);
+    //Start custom Interrupts
+    isrCounter_StartEx(CounterISR);  
     CyGlobalIntEnable; /* Enable global interrupts. */
     
    /* for(i = 0;; i++)
@@ -137,5 +145,15 @@ void Lpcomp_DDFT_Out(void)
     (*(reg32 *)CYREG_TST_DDFT_CTRL) |= (1u) << 31;
 }
 
+
+CY_ISR(CounterISR){
+    
+    //uint32 counterStatus = 0u;
+    //counterStatus = Counter_GetInterruptSource();
+    //uint32_t count, count1;
+    count = Counter_ReadCapture();
+    count1 = Counter_ReadCaptureBuf();
+    Counter_ClearInterrupt(Counter_INTR_MASK_CC_MATCH); //could make this faster
+}
 
 /* [] END OF FILE */

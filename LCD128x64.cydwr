@@ -33,9 +33,11 @@
       <Data key="6dc77e4e-bc8c-4295-99cc-90b34f4b7588/7452d2ad-6927-4631-ada7-f0f5be9418ba" value="CapSense_1_Sns" />
       <Data key="6dc77e4e-bc8c-4295-99cc-90b34f4b7588/cc19c666-c22b-4b9b-b13d-252fdd9c4502" value="CapSense_1_Cmod" />
       <Data key="6dc77e4e-bc8c-4295-99cc-90b34f4b7588/fda621bb-08c1-4eea-8d96-5e8ca429833e" value="CapSense_1_Shield" />
-      <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="ZCD" />
+      <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="sw_rc" />
       <Data key="8dc39408-3639-49b9-bbec-35d675d93b5b" value="SS" />
       <Data key="12bf794d-f21a-47c0-9b9b-a7d52541cd4e" value="OLED_SCLK" />
+      <Data key="43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/23b8206d-1c77-4e61-be4a-b4037d5de5fc" value="UART_1_tx" />
+      <Data key="43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/78e33e5d-45ea-4b75-88d5-73274e8a7ce4" value="UART_1_rx" />
       <Data key="57a64df1-e382-471a-8a13-50518871acef" value="IDAC1_OUT" />
       <Data key="57b0fdcd-3be0-4897-9bbd-d7692287041a" value="SW1" />
       <Data key="74a257f1-0a5c-4a00-92a1-94d366e60d60" value="debug2" />
@@ -1591,7 +1593,7 @@
     </Group>
     <Group key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba">
       <Group key="0">
-        <Data key="Port Format" value="2,4" />
+        <Data key="Port Format" value="3,1" />
       </Group>
     </Group>
     <Group key="8dc39408-3639-49b9-bbec-35d675d93b5b">
@@ -1602,6 +1604,16 @@
     <Group key="12bf794d-f21a-47c0-9b9b-a7d52541cd4e">
       <Group key="0">
         <Data key="Port Format" value="0,6" />
+      </Group>
+    </Group>
+    <Group key="43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/23b8206d-1c77-4e61-be4a-b4037d5de5fc">
+      <Group key="0">
+        <Data key="Port Format" value="4,1" />
+      </Group>
+    </Group>
+    <Group key="43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/78e33e5d-45ea-4b75-88d5-73274e8a7ce4">
+      <Group key="0">
+        <Data key="Port Format" value="4,0" />
       </Group>
     </Group>
     <Group key="57a64df1-e382-471a-8a13-50518871acef">
