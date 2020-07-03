@@ -87,6 +87,7 @@
 #include "sw_rc_aliases.h"
 #include "Clock_1.h"
 #include "isr_ton.h"
+#include "UART_RX_ISR.h"
 #include "SPIMaster_IntClock.h"
 #include "UART_1_SCBCLK.h"
 #include "UART_1_tx.h"

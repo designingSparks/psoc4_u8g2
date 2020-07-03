@@ -106,14 +106,14 @@ void taskHandler(void)
   uint32_t temp;  
   
   updateEncoder();
-  if (i < 5)
+  if (i < 100)
     i++;
   else
   {
     i = 0;
-  
-    debounceButtons();
-    updateOutputs();
+    processCommand();
+    //debounceButtons();
+    //updateOutputs();
     
     //Test
     //temp = PWM_Buzzer_ReadPeriod();
