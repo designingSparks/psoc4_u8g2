@@ -31,6 +31,7 @@ void init_Oled(void)
     u8g2_InitDisplay(&u8g2); //calls u8x8_InitDisplay
     u8g2_ClearDisplay(&u8g2);
     u8g2_SetPowerSave(&u8g2, 0); // wake up display
+    CyDelay(10); //debuggin
     
     /*
     u8g2_ClearBuffer(&u8g2);
