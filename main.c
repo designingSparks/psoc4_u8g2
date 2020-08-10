@@ -15,7 +15,7 @@
 #include "console.h"
 #include "buttons.h"
 #include "encoder.h"
-
+#include "main.h"
 
 //Prototypes
 //void initialize();
@@ -23,9 +23,11 @@ void Lpcomp_DDFT_Out(void);
 void taskHandler(void);
 CY_ISR(CounterISR);
 
-//Global variable for debugging
-uint32_t count, count1;
 
+//Global variable for debugging
+volatile uint16_t count[10];
+uint8_t printFlag;
+uint32_t runningCount, maxPrintCount;
 
 int main(void)
 {
@@ -147,13 +149,39 @@ void Lpcomp_DDFT_Out(void)
 
 
 CY_ISR(CounterISR){
-    
+    static uint8_t i=0;
+    uint16_t countVal;
     //uint32 counterStatus = 0u;
     //counterStatus = Counter_GetInterruptSource();
     //uint32_t count, count1;
-    count = Counter_ReadCapture();
-    count1 = Counter_ReadCaptureBuf();
+    //count = Counter_ReadCapture();
+    //count[i++]
+    countVal = Counter_ReadCaptureBuf();
+    if (i>=10)
+        i=0;
     Counter_ClearInterrupt(Counter_INTR_MASK_CC_MATCH); //could make this faster
+    
+    if(printFlag && (runningCount < maxPrintCount)) {
+        //dbg_printf("%d\n", countVal);
+        
+        //countVal = 16356;
+        //Use low level commands to print quickly. Note that UART_1_UartPutChar() is blocking.
+        UART_1_UartPutChar(countVal >> 8);
+        UART_1_UartPutChar(countVal & 0xFF); //lower byte
+        //UART_1_UartPutChar(0x0a); //'\n'
+        runningCount++;
+    }
+}
+
+volatile uint16_t* getCount(void) {
+    return &count[0];
+}
+
+
+void enablePrintCount(uint8_t flag, uint32_t maxCount) {
+    printFlag = flag;
+    maxPrintCount = maxCount;
+    runningCount = 0;
 }
 
 /* [] END OF FILE */

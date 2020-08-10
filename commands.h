@@ -20,12 +20,11 @@ typedef enum  {
 
 typedef enum {
     ADC=BASE,
-    OLED1,
-    OLED2,
+    ADC_DMA,
+    DECT_CNT,
     OLED3,
     DACPWM,
     IDAC,
-    ADC_DMA,
     DAC1,
     DAC2,
     DAC1_MSD,

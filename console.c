@@ -15,6 +15,7 @@
 #include "utilities.h"
 //#include "u8g2.h"
 #include "oled.h"
+#include "main.h"
 
 #define LEN_CMDBUF 32
 
@@ -51,7 +52,9 @@ void processCommand(void)
   ParamID param;
   DataType dformat;
   ErrType err = 0;
-  
+  uint32_t* count;
+  uint16_t* dect_count;
+    
   if (cmdReceived)
   {
     //UART_1_UartPutString(cmdBuffer); //debug
@@ -88,8 +91,13 @@ void processCommand(void)
       if (cmd == READ && param == ADC) 
       {
         dbg_printf("Reading ADC\n");
-        result_int = 99;
-        dbg_printf("%d\n", result_int);
+        //result_int = 99;
+        //dbg_printf("%d\n", result_int);
+        count = getCount();
+        
+       for (uint8_t i = 0; i < 10; i++)
+            dbg_printf("%d\n", *count++);
+    
       }
       else if (cmd == READ && param == ADC_DMA) //01199 - read 99 samples
       {
@@ -99,10 +107,12 @@ void processCommand(void)
       {
         dbg_printf("Write DAC1: %d\n", int_val);
       }
-      else if (cmd == WRITE && param == OLED1)
+      else if (cmd == READ && param == DECT_CNT)
       {
-        dbg_printf("Write OLED: %s\n", value);
-        write_oled(value);
+        dbg_printf("Read DECT_CNT: %s\n", int_val);
+        enablePrintCount(1, (uint32_t)int_val);
+        
+        //write_oled(value);
         //u8g2_DrawStr(&u8g2, 0,20, value);
       }
       else if (cmd == WRITE && param == DACPWM)

@@ -52,6 +52,7 @@
           <File BuildType="BUILD" Toolchain="">commands.h</File>
           <File BuildType="BUILD" Toolchain="">buttons.h</File>
           <File BuildType="BUILD" Toolchain="">encoder.h</File>
+          <File BuildType="BUILD" Toolchain="">main.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\john.schoenberger\Documents\PSoC_Creator\LCD\Workspace01\LCD128x64.cydsn">
